@@ -107,6 +107,7 @@ struct Home: View {
             ZStack{
                 Color.black
                     .opacity(timerModel.addNewTimer ? 0.25: 0)
+                    .ignoresSafeArea()
                     .onTapGesture {
                         timerModel.hour = 0
                         timerModel.minutes = 0
